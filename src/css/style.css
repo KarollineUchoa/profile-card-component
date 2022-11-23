@@ -1,0 +1,70 @@
+body {
+  background-color: var(--background-color);
+  height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+}
+
+hr {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* O height: 100vh no body é para que o fundo ocupe 100% da altura da tela independente dos conteúdos nela
+
+e os height: 100% e width: 100% são para eles ocuparem 100% do espaço do pai deles */
+
+/* O elemento HTML <hr> representa uma quebra temática entre elementos de nível de parágrafo (por exemplo, uma mudança da cena de uma história, ou uma mudança de tema com uma seção). Nas versões anteriores do HTML, representava uma linha horizontal. */
+
+ .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 20px;
+  width: 330px;
+  height: 350px;
+}
+
+.card .profile-informations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+
+.card .profile-informations img {
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.card .profile-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.profile-numbers .info .counter,
+.card .profile-informations p {
+  font-weight: 700;
+}
+
+.card .profile-informations .age,
+.card .profile-informations .city,
+.profile-numbers .info .counter-type{
+  color: var(--text-color);
+}
